@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import CreateTask from "./components/CreateTask";
 import ListTasks from "./components/ListTasks";
+import signup from "./components/signup"; 
 import  { Toaster } from 'react-hot-toast';
 import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
@@ -15,8 +16,12 @@ import { HTML5Backend } from 'react-dnd-html5-backend'
    }, []);
 
   return (
+    
     <DndProvider backend={HTML5Backend}>
     <Toaster/>
+    <div>
+    <signup/>
+    </div>
     <div className="bg-slate-100
                       w-screen
                       h-screen 
